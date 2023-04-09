@@ -1,0 +1,26 @@
+//output for ,n=4;
+1357
+3571
+5713
+7135
+
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        for(int row=1 ;row <= n ;row++){
+            for(int col=1 ,inc=2*row-1 ,dec=1 ;col <=n ;col++){
+                    if(inc <= 2*n-1){
+                    System.out.print(inc);  
+                     inc+=2;       
+                    }
+                    else{
+                      System.out.print(dec);
+                      dec+=2;       
+                    }
+             } 
+            System.out.println();     
+        }
+    }
+}
